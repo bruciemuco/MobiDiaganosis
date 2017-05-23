@@ -1,0 +1,49 @@
+﻿<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Doctor Details</h1>
+        <div class="buttons"> 
+            <button class="button button-icon ion-ios-close-empty" ng-click="closeDocDetails()">
+           </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="bookDoc()">
+            <div class="list card">
+
+                <div class="item item-avatar">
+                    <img src="avatar.jpg">
+                    <h2>Dr. John Doe</h2>
+                    <p>short description of dr john</p>
+                    <p>available</p>
+                </div>
+               
+                <div class="item item-content">
+                    
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            Purpose:
+                        </div>
+                        <select>
+                            <option selected>Medical Check up</option>
+                            <option>Diagnosis</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+
+                    <p>calender here</p>
+
+                    <ion-list>
+                        <ion-radio ng-model="choice" ng-value="'A'">Pay Now</ion-radio>
+                        <ion-radio ng-model="choice" ng-value="'B'">Pay Later</ion-radio>
+                    </ion-list>
+                </div>
+
+                <a class="item item-icon-left assertive" href="#">
+                    <i class="icon ion-paper-airplane"></i>
+                    Book
+                </a>
+
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
